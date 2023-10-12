@@ -12,5 +12,10 @@ def read_json(file_path):
         return data
 
 
-def assert_with_message(expected, actual, value_name):
+def assert_with_message(actual, expected, value_name):
     assert expected == actual, f"Expected resource {value_name} to equal: {expected}, but it was: {actual}"
+
+
+def check_resource(actual, expected, categories):
+    for category in categories:
+        assert_with_message(expected[category], actual[category], category)

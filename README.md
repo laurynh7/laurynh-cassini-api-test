@@ -5,7 +5,7 @@ API test framework testing the https://reqres.in/ API
 Tests cover: 
 * REGISTER - SUCCESSFUL 
 * LOGIN - SUCCESSFUL 
-* LIST <RESOURCE> 
+* LIST <RESOURCE>
 
 ### Built With
 
@@ -28,5 +28,5 @@ Built using Pythons Request library
    ```
 4. Run tests from the command line with:
    ```sh
-   python tests/test_resource_api.py
+   pytest tests/test_resource_api.py
    ```
